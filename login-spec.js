@@ -35,12 +35,11 @@ describe('Test Assistanboken site', function() {
       var SelectWrapper  = require('C:/Users/User/Desktop/Protractor_Test/select-wrapper.js');
       var mySelect = new SelectWrapper(by.id('Customers'));
       mySelect.selectByText('QA AB Test');
-      //var Customers = element(by.cssContainingText('option', 'QA AB Test'));
-      var s = element(by.id('332'));
-      console.log (s);
-      //var name = element(by.name('QAss Admin'))
-      var Username=s.element(by.name('QAss Admin'))
-      //expect(Username.toEqual('QAss Admin'));
-      expect(Username.getText()).toEqual('QAss Admin');
+      var CustomerName = element(by.id('SearchName'));
+      CustomerName.sendKeys('QAss Admin');
+      browser.sleep(3000);
+      var SearchedName = element(by.className('name'));
+      expect(SearchedName.getText()).toBe('QAss Admin');
+      
   });
 });
