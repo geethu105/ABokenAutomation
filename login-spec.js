@@ -35,11 +35,21 @@ describe('Test Assistanboken site', function() {
       var SelectWrapper  = require('C:/Users/User/Desktop/Protractor_Test/select-wrapper.js');
       var mySelect = new SelectWrapper(by.id('Customers'));
       mySelect.selectByText('QA AB Test');
+
+      // Search the QAss admin user 
       var CustomerName = element(by.id('SearchName'));
       CustomerName.sendKeys('QAss Admin');
-      browser.sleep(3000);
+      browser.sleep(2000);
       var SearchedName = element(by.className('name'));
       expect(SearchedName.getText()).toBe('QAss Admin');
+
+      var until = protractor.ExpectedConditions;
+      browser.wait(until.presenceOf(SearchedName), 5000, 'Element taking too long to appear in the DOM');
+      var Loginasicon = element(by.xpath("//tr[@id='332']/td[7]/div/a[1]"));
+      // var myelement = element(by.id("navigationPageButton"));
+JavascriptExecutor jse2 = (JavascriptExecutor)browser;
+jse2.executeScript("arguments[0].scrollIntoView()", Loginasicon); 
+      Loginasicon.click();
       
   });
 });
