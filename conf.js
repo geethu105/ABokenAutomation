@@ -1,6 +1,6 @@
 exports.config = { 
   seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: ['login-spec.js'],
+  specs: ['login-spec.js', 'companyadminuser-spec.js'],
   framework: 'jasmine2' ,
      onPrepare: function() {
         var jasmineReporters = require('jasmine-reporters');
@@ -12,6 +12,11 @@ exports.config = {
             email : 'systemadmin',
             password : 'abok2016'
           }
-        }
-      
+        },
+      companyadmin :{
+          login:{
+            email : 'xass@assistansboken.se',
+            password : 'abok2016'
+          }
+      }
 };

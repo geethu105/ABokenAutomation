@@ -42,18 +42,16 @@ describe('Test Assistanboken site', function() {
       browser.sleep(2000);
       var SearchedName = element(by.className('name'));
       expect(SearchedName.getText()).toBe('QAss Admin');
-      //Actions action = new Actions(driver);
+ 
       var until = protractor.ExpectedConditions;
       browser.wait(until.presenceOf(SearchedName), 5000, 'Element taking too long to appear in the DOM');
-      //browser.manage().timeouts().implicitlyWait(30000);
-	  	//browser.get("http://chercher.tech/practice/practice-pop-ups-selenium-webdriver")
-      var Loginasicon = element(by.xpath("//tr[@id='332']/td[7]/div/a[1]"));
-      // var myelement = element(by.id("navigationPageButton"));
-      // Actions actions = new Actions(driver);
-      // actions.moveToElement(Loginasicon).click().build().perform();
-      //browser.actions().mouseMove(Loginasicon).perform();
-      browser.actions().mouseMove(Loginasicon).doubleclick().perform();
       browser.sleep(5000);
-      
+     //Login as QAss Admin User
+      var Loginasicon = browser.driver.findElement(by.xpath("//tr[@id='332']/td[7]/div/a[1]"));
+      Loginasicon.click();
+      browser.sleep(5000);
+     // Asert check on Company Admin users page 
+      expect(browser.getTitle()).toEqual('Assistansboken | Home');
   });
+ 
 });
