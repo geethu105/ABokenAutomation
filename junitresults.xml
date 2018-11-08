@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
- <testsuite name="Test Assistanboken site" timestamp="2018-08-21T17:10:14" hostname="localhost" time="23.443" errors="0" tests="2" skipped="0" failures="0">
-  <testcase classname="Test Assistanboken site" name="login to system admin page" time="8.159">
+ <testsuite name="Test Assistanboken site" timestamp="2018-11-08T11:53:11" hostname="localhost" time="20.271" errors="0" tests="2" skipped="0" failures="0">
+  <testcase classname="Test Assistanboken site" name="login to system admin page" time="7.743">
   </testcase>
-  <testcase classname="Test Assistanboken site" name="List the users from QA AB Test Company" time="15.283">
+  <testcase classname="Test Assistanboken site" name="List the users from QA AB Test Company" time="12.511">
   </testcase>
  </testsuite>
- <testsuite name="Verify Company Admin users page" timestamp="2018-08-21T17:10:38" hostname="localhost" time="0.046" errors="0" tests="1" skipped="0" failures="0">
+ <testsuite name="Verify Company Admin users page" timestamp="2018-11-08T11:53:32" hostname="localhost" time="0.083" errors="0" tests="2" skipped="0" failures="0">
   <testcase classname="Verify Company Admin users page" name="Verify the Home menu" time="0.046">
+  </testcase>
+  <testcase classname="Verify Company Admin users page" name="Verify the message menu" time="0.037">
   </testcase>
  </testsuite>
 </testsuites>

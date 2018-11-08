@@ -51,7 +51,9 @@ describe('Test Assistanboken site', function() {
       Loginasicon.click();
       browser.sleep(5000);
      // Asert check on Company Admin users page 
-      expect(browser.getTitle()).toEqual('Assistansboken | Home');
+      //expect(browser.getTitle()).toEqual('Assistansboken | Home');
+      var UserName = element(by.className('user'));
+      expect(UserName.getText()).toBe('QAss Admin');
   });
  
 });
