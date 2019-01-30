@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
- <testsuite name="Test Assistanboken site" timestamp="2018-11-09T11:35:41" hostname="localhost" time="22.788" errors="0" tests="2" skipped="0" failures="0">
-  <testcase classname="Test Assistanboken site" name="login to system admin page" time="10.287">
+ <testsuite name="Test Assistanboken site" timestamp="2019-01-25T17:32:19" hostname="localhost" time="24.416" errors="0" tests="2" skipped="0" failures="0">
+  <testcase classname="Test Assistanboken site" name="login to system admin page" time="11.873">
   </testcase>
-  <testcase classname="Test Assistanboken site" name="List the users from QA AB Test Company" time="12.501">
+  <testcase classname="Test Assistanboken site" name="List the users from QA AB Test Company" time="12.543">
   </testcase>
  </testsuite>
- <testsuite name="Verify Company Admin users page" timestamp="2018-11-09T11:36:04" hostname="localhost" time="0.323" errors="0" tests="8" skipped="0" failures="0">
-  <testcase classname="Verify Company Admin users page" name="Verify the Home menu" time="0.057">
+ <testsuite name="Verify Company Admin users page and Header Menus" timestamp="2019-01-25T17:32:43" hostname="localhost" time="0.307" errors="0" tests="8" skipped="0" failures="0">
+  <testcase classname="Verify Company Admin users page and Header Menus" name="Verify the Home menu" time="0.043">
   </testcase>
-  <testcase classname="Verify Company Admin users page" name="Verify the message menu" time="0.037">
+  <testcase classname="Verify Company Admin users page and Header Menus" name="Verify the message menu" time="0.04">
   </testcase>
-  <testcase classname="Verify Company Admin users page" name="Verify the Calendar menu" time="0.039">
+  <testcase classname="Verify Company Admin users page and Header Menus" name="Verify the Calendar menu" time="0.036">
   </testcase>
-  <testcase classname="Verify Company Admin users page" name="Verify the Basic scheduling menu" time="0.031">
+  <testcase classname="Verify Company Admin users page and Header Menus" name="Verify the Basic scheduling menu" time="0.037">
   </testcase>
-  <testcase classname="Verify Company Admin users page" name="Verify the Reports menu" time="0.044">
+  <testcase classname="Verify Company Admin users page and Header Menus" name="Verify the Reports menu" time="0.037">
   </testcase>
-  <testcase classname="Verify Company Admin users page" name="Verify the Patient menu" time="0.036">
+  <testcase classname="Verify Company Admin users page and Header Menus" name="Verify the Patient menu" time="0.04">
   </testcase>
-  <testcase classname="Verify Company Admin users page" name="Verify the Users menu" time="0.039">
+  <testcase classname="Verify Company Admin users page and Header Menus" name="Verify the Users menu" time="0.039">
   </testcase>
-  <testcase classname="Verify Company Admin users page" name="Verify the Company menu" time="0.04">
+  <testcase classname="Verify Company Admin users page and Header Menus" name="Verify the Company menu" time="0.035">
   </testcase>
  </testsuite>
 </testsuites>
